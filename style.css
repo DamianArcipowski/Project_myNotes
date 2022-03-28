@@ -1,0 +1,143 @@
+:root{
+    --gora: "";
+    --dol: "";
+}
+
+body{
+    background-color: rgb(230, 230, 230);
+    margin: 0;
+}
+
+.header{
+    width: auto;
+    margin: 30px 30px;
+}
+
+.logo{
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navButtons{
+    display: inline-block;
+    text-align: right;
+    width: 49%;
+}
+
+.modalBox{
+    position: absolute;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+    visibility: hidden;
+}
+
+.modal{
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(230, 230, 230);
+}
+
+.modal>h1{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+textarea{
+    margin: 15px;
+    outline: none;
+    border-radius: 2px;
+}
+
+select{
+    margin: 15px;
+    padding: 10px;
+    outline: none;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+select:active, textarea:hover{
+    border-color: rgb(62, 136, 233);
+}
+
+button{
+    padding: 8px 20px;
+    width: auto;
+    border-radius: 4px;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(165, 165, 165);
+}
+
+
+.alert{
+    margin-top: 0px;
+    color: rgb(190, 89, 22)
+}
+
+.notes{
+    margin: 5% 5%;
+    height: 70vh;
+}
+
+.myNote{
+    width: 230px;
+    height: 140px;
+    display: inline-block;
+    margin: 15px 15px;
+    border-radius: 2px;
+}
+
+.topNote{
+    height: 40%;
+    font-weight: bold;
+    background-color: var(--gora);
+    text-indent: 10px;
+}
+
+.bottomNote{
+    height: 60%;
+    overflow-y: auto;
+    background-color: var(--dol);
+}
+
+span>button, span>button:hover{
+    border: none;
+    background-color: var(--gora);
+    font-size: 16px;   
+}
+
+span{
+   background-color: gray;
+   
+}
+
+.topNote>p{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.noteContext{
+    margin: 10px 10px;
+}
+
+.hiddenNote{
+    display: none;
+}
